@@ -50,7 +50,9 @@
 }
 
 .lead {
+    margin: auto;
     padding-top: 56px;
+    max-width: 984px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,11 +79,6 @@
     outline: solid red 1px;
 }
 
-.lead__main-picture {
-    max-width: 984px;
-    outline: solid red 1px;
-}
-
 .lead__image {
     width: 100%;
     object-fit: contain;
@@ -89,11 +86,13 @@
 
 .lead__caption {
     margin: 8px 0 0;
+    align-self: flex-start;
     font-size: 10px;
     line-height: 1.4;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #FFF;
+    outline: solid red 1px;
 }
 
 .intro {
@@ -132,21 +131,23 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .lead__main-picture {
+    .lead {
         max-width: 928px;
+        padding-top: 48px;
+    }
+
+    .lead__subtitle {
+        margin-bottom: 56px;
     }
 
     .intro {
-        max-width: 928px;
+        margin: 0;
+        padding: 92px 48px 0;
     }
 
 }
 
 @media screen and (max-width: 768px) {
-    .lead__main-picture {
-        max-width: 768px;
-    }
-
     .header {
         padding: 28px 24px 0;
     }
@@ -155,22 +156,33 @@
         margin-left: 24px;
     }
 
-    .intro__title {
-        padding: 0 24px 0;
+    .intro {
+        padding: 88px 24px 0;
 
     }
 
     .intro__text {
-        padding: 0 24px 0;
-    }
-
-    .intro__list {
-        padding-left: 24px;
+        max-width: 720px;
     }
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 660px) {
+    .lead__title {
+        font-size: 58px;
+    }
+
+    .lead__subtitle {
+        font-size: 25px;
+    }
+
+    .intro__title {
+        font-size: 45px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
     .header {
         padding: 16px 16px 0;
     }
@@ -186,9 +198,41 @@
         line-height: 1.1;
     }
 
-    /*.lead__title {
+    .intro {
+        padding: 64px 16px 0;
+    }
+
+    .lead__title {
         font-size: 40px;
         line-height: 1.1;
-    }*/
+    }
 
+    .lead__subtitle {
+        margin: 16px 0 40px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .lead__caption {
+        margin-left: 16px;
+    }
+
+    .intro__title {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .intro__text {
+        margin: 40px 0 34px;
+    }
 }
+
+/*@media screen and (max-width: 320px) {
+    .lead__subtitle {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+
+}*/
+
