@@ -130,6 +130,39 @@
     outline: solid red 1px;
 }
 
+.photo-grid {
+    padding: 92px 48px 0;
+    outline: solid red 1px;
+}
+
+.photo-grid__cards {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
+    list-style-type: none;
+    gap: 16px;
+    outline: solid red 1px;
+}
+
+.photo-grid__item {
+    width: 100%;
+    object-fit: contain;
+    outline: solid red 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1024px) {
     .lead {
         max-width: 928px;
@@ -145,6 +178,9 @@
         padding: 92px 48px 0;
     }
 
+    .photo-grid__cards {
+        gap: 14px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -163,6 +199,15 @@
 
     .intro__text {
         max-width: 720px;
+    }
+
+    .photo-grid__cards {
+        gap: 16px;
+    }
+
+    .photo-grid {
+        padding: 88px 24px 0;
+        outline: solid red 1px;
     }
 
 }
@@ -224,6 +269,15 @@
 
     .intro__text {
         margin: 40px 0 34px;
+    }
+
+    .photo-grid {
+        padding: 64px 16px 0;
+        outline: solid red 1px;
+    }
+
+    .photo-grid__cards {
+        gap: 12px;
     }
 }
 
