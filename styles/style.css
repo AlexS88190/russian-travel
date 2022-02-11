@@ -20,7 +20,6 @@
 }
 
 .header__logo {
-
     width: 176px;
     height: 52px;
     object-fit: contain;
@@ -205,12 +204,12 @@
     font-size: 18px;
     line-height: 1.2px;
     color: #FFF;
+    transition: opacity 0.2s linear;
 }
 
-/*.place__discription {
-   max-width: 484px;
-}*/
-
+.place__link:hover {
+    opacity: 0.8;
+}
 
 .place__paragraph {
     margin: 0;
