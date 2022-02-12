@@ -21,19 +21,3 @@
     font-family: "Inter";
     font-weight: bold;
 }
-
-@font-face {
-    src:
-    url(../vendor-fonts/Inter-Medium.woff2) format("woff2"),
-    url(../vendor-fonts/Inter-Medium.woff) format("woff");
-    font-family: "Inter";
-    font-weight: normal;
-}
-
-@font-face {
-    src:
-    url(../vendor-fonts/Inter-Light.woff2) format("woff2"),
-    url(../vendor-fonts/Inter-Light.woff) format("woff");
-    font-family: "Inter";
-    font-weight: normal;
-}
