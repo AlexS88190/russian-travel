@@ -158,18 +158,15 @@
     outline: solid red 1px;
 }
 
-.place-cards {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    outline: solid red 1px;
-}
+
 
 .place {
     max-width: 100%;
     display: flex;
+    flex: 1 1 40%;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 
 .place__title {
@@ -201,20 +198,19 @@
 }
 
 .place__image {
-    width: 460px;
-    object-fit: contain;
+    width: 46.8%;
+    height: 46.8%;
     outline: solid red 1px;
 }
 
-.place__text {
-   max-width: 484px;
-}
+
 
 
 .place__paragraph {
     margin: 0 0 26px;
     font-size: 18px;
     line-height: 1.6;
+    max-width: 484px;
     color: #FFF;
     outline: solid red 1px;
 }
