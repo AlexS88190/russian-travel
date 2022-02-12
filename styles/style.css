@@ -161,9 +161,8 @@
 
 
 .place {
-    max-width: 100%;
+    max-width: 984px;
     display: flex;
-    flex: 1 1 40%;
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -175,17 +174,22 @@
     font-size: 72px;
     line-height: 1.1;
     color: #FFF;
+    flex: 1 1 40%;
+
     outline: solid red 1px;
 }
 
 .place__website {
-    width: 484px;
+    flex: 1 1 40%;
+    margin-left: 40px;
+
     outline: solid red 1px;
 }
 
 .place__url-heading {
     margin: 106px 0 12px;
-    max-width: 484px;
+
+
     font-size: 12px;
     letter-spacing: 2px;
     color: #AAA;
@@ -195,14 +199,21 @@
     font-size: 18px;
     line-height: 1.2px;
     color: #FFF;
+
 }
 
 .place__image {
+    flex: 1 1 40%;
+
     width: 46.8%;
     height: 46.8%;
     outline: solid red 1px;
 }
 
+.place__text {
+    flex: 1 1 40%;
+    margin-left: 40px;
+}
 
 
 
@@ -210,9 +221,9 @@
     margin: 0 0 26px;
     font-size: 18px;
     line-height: 1.6;
-    max-width: 484px;
     color: #FFF;
     outline: solid red 1px;
+
 }
 
 
